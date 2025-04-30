@@ -1,3 +1,37 @@
+# Weather App
+
+A simple weather application built using **HTML**, **CSS**, **JavaScript**, and **React**. This app allows users to get current weather information by searching for any city. It fetches data from the [OpenWeatherMap API](https://openweathermap.org/api) to display real-time weather details like temperature, humidity, and weather conditions.
+
+## Features
+
+- Search for weather by city name
+- Display current weather details (temperature, humidity, wind speed, etc.)
+- Interactive UI built with React
+- Uses OpenWeatherMap API to fetch real-time data
+- Responsive design for both mobile and desktop views
+
+## Technologies Used
+
+- **HTML**: For the basic structure of the app
+- **CSS**: For styling and responsive design
+- **JavaScript**: For interactive elements and handling API requests
+- **React**: For building a component-based, dynamic user interface
+- **OpenWeatherMap API**: For fetching weather data
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (Recommended version 14.x or higher)
+- [npm](https://www.npmjs.com/) (npm is usually installed with Node.js)
+
+### Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/YourUsername/weather-app.git
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -39,32 +73,9 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Acknowledgments
+OpenWeatherMap for providing the weather API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+React for the front-end framework
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+FontAwesome for weather icons
