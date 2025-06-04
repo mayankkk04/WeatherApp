@@ -29,7 +29,7 @@ A simple weather application built using **HTML**, **CSS**, **JavaScript**, and 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/YourUsername/weather-app.git
+   git clone https://github.com/mayankkk04/weather-app.git
 
 
 # Getting Started with Create React App
