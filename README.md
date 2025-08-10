@@ -1,5 +1,6 @@
 # Weather App
 
+Site is Live At - https://mayankkk04.github.io/WeatherApp/
 A simple weather application built using **HTML**, **CSS**, **JavaScript**, and **React**. This app allows users to get current weather information by searching for any city. It fetches data from the [OpenWeatherMap API](https://openweathermap.org/api) to display real-time weather details like temperature, humidity, and weather conditions.
 
 ## Features
