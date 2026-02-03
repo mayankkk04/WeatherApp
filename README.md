@@ -1,18 +1,25 @@
-# Weather App
+# 🌦️ Cloud Hosted Weather App (AWS S3 + CloudFront)
 
-Site is Live At - https://mayankkk04.github.io/WeatherApp/
+A real-time Weather Application built with React and deployed on AWS Cloud using S3 Static Website Hosting and CloudFront CDN for secure and fast global delivery.
 
+## 🚀 Project Overview
 
-A simple weather application built using **HTML**, **CSS**, **JavaScript**, and **React**. This app allows users to get current weather information by searching for any city. It fetches data from the [OpenWeatherMap API](https://openweathermap.org/api) to display real-time weather details like temperature, humidity, and weather conditions.
+This project demonstrates how a React application can be deployed to AWS without using any traditional servers.
 
-## Features
+The app fetches real-time weather data from a public Weather API and is hosted using a serverless cloud architecture.
 
-- Search for weather by city name
-- Display current weather details (temperature, humidity, wind speed, etc.)
-- Interactive UI built with React
-- Uses OpenWeatherMap API to fetch real-time data
-- Responsive design for both mobile and desktop views
+User → CloudFront (CDN + HTTPS) → S3 (Static Website Hosting) → Weather API
+  
+☁️ AWS Services Used
+  
+Amazon Web Services S3 — Static website hosting
+  
+Amazon CloudFront — CDN for fast global access + HTTPS
 
+  
+IAM & Bucket Policies — Secure public access
+
+  
 ## Technologies Used
 
 - **HTML**: For the basic structure of the app
@@ -21,64 +28,46 @@ A simple weather application built using **HTML**, **CSS**, **JavaScript**, and 
 - **React**: For building a component-based, dynamic user interface
 - **OpenWeatherMap API**: For fetching weather data
 
+  
+3️⃣ Add Bucket Policy for Public Access
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowPublicRead",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::weather-app-mayank/*"
+    }
+  ]
+}
+
+  
+4️⃣ Configure CloudFront
+
+Origin: S3 static website endpoint
+
+Viewer Protocol: Redirect HTTP → HTTPS
+
+Default root object: index.html
 ## Getting Started
 
-### Prerequisites
+## 💡 Why this project is useful
 
-- [Node.js](https://nodejs.org/) (Recommended version 14.x or higher)
-- [npm](https://www.npmjs.com/) (npm is usually installed with Node.js)
+  
+This project shows how a frontend application can be deployed using cloud-native services without managing any servers, which is a common real-world architecture for static web apps.
 
-### Installation
+  
+🧠 Future Improvements
+  
+Add custom domain using Route 53
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/mayankkk04/weather-app.git
 
+Add CI/CD using GitHub Actions
 
-# Getting Started with Create React App
+  
+Add monitoring using CloudWatch
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Acknowledgments
-OpenWeatherMap for providing the weather API
-
-React for the front-end framework
-
+  
 FontAwesome for weather icons
