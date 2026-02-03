@@ -2,6 +2,7 @@
 
 A real-time Weather Application built with React and deployed on AWS Cloud using S3 Static Website Hosting and CloudFront CDN for secure and fast global delivery.
 
+The site is live at CloudFornt - https://d3d285o9qolcni.cloudfront.net/
 ## 🚀 Project Overview
 
 This project demonstrates how a React application can be deployed to AWS without using any traditional servers.
