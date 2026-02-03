@@ -29,7 +29,19 @@ IAM & Bucket Policies — Secure public access
 - **OpenWeatherMap API**: For fetching weather data
 
   
+1️⃣ Build React App
+
+2️⃣ Create S3 Bucket
+
+Disabled Block Public Access
+
+Enabled Static Website Hosting
+
+Uploaded contents of build/ folder (index.html, static/)
+
+  
 3️⃣ Add Bucket Policy for Public Access
+<pre>
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -42,6 +54,7 @@ IAM & Bucket Policies — Secure public access
     }
   ]
 }
+</pre>
 
   
 4️⃣ Configure CloudFront
